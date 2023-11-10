@@ -29,15 +29,18 @@
 
 .ac-container .ac-alasveto input:checked + label::after {
   font-family: 'FontAwesome';
+  /* font-size: 16px; */
 	content: '\f0d8';
   float: right;
-  /* border: 1px solid red; */
+  color: #942B2D;
+  /* color: green; */
 }
 
 .ac-container .ac-alasveto input + label::after {
   font-family: 'FontAwesome';
 	content: '\f0d7';
   float: right;
+  color: #942B2D;
 }
 
 .ac-container input {
@@ -52,7 +55,7 @@
 
 .ac-container article p {
   margin: 0;
-  padding:  7px 10px;
+  padding:  3px 10px;
   font-size: 15px;
   color: #333;
   /* line-height: 1.5; */
@@ -65,8 +68,9 @@
 }
 
 .ac-container article p i.fa {
-  padding-right: 16px;
-  color: #942B2D;
+  padding-right: 10px;
+  /* color: #942B2D; */
+  color: #777;
 }
 
 .ac-container input:checked~article {
