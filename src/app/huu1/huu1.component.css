@@ -1,0 +1,62 @@
+
+.ac-container {
+  max-width: 300px;
+  font-family: Noto, Arial, sans-serif;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+.ac-container label {
+  height: 30px;
+  line-height: 1.8;
+  font-size: 16px;
+  padding: 0 10px 0 15px;
+  display: block;
+  cursor: pointer;
+  color: #333;
+  background: #eee;
+  border-top: 1px solid #ccc;
+}
+
+.ac-container {
+  width: 100%;
+  margin: 10px auto;
+}
+
+.ac-container label:hover {
+  background: #ddd;
+}
+
+.ac-container input {
+  display: none;
+}
+
+.ac-container article {
+  overflow: hidden;
+  height: 0;
+  transition: 0.9s;
+}
+
+.ac-container article p {
+  margin: 0;
+  padding:  7px 10px;
+  font-size: 15px;
+  color: #333;
+  /* line-height: 1.5; */
+}
+
+.ac-container article p:hover {
+  /* background: #C5BAA1 */
+  /* background: #eee; */
+  border: 1px solid #333;
+}
+
+.ac-container article p i.fa {
+  padding-right: 10px;
+  color: #942B2D;
+}
+
+.ac-container input:checked~article {
+  height: auto;
+  border-top: 1px solid #ccc;
+}

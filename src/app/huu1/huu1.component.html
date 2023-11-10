@@ -1,0 +1,135 @@
+
+<p style="text-align: center; color:green; font-weight: 500;">
+    Todo: tämän voisi vetää vaan jonnekin leftnavi:n sisään tms.
+</p>
+
+<section class="ac-container">
+
+    <div>
+        <input id="ac-nolla" type="checkbox" checked>
+        <label for="ac-nolla" (click)="avaaAlertti('moi kaikille')">
+            Etusivu (avaa alertin)
+        </label>
+    </div>
+
+    <div>
+        <input id="ac-eka" type="checkbox" checked >
+        <label for="ac-eka" (click)="open(content)">
+            Jotain (avaa modal-ikkunan)
+        </label>
+    </div>
+
+    <!-- <div>
+        <input id="ac-toka" type="checkbox" checked>
+        <label for="ac-toka">Ei vielä toimintoi</label>
+    </div> -->
+
+    <div>
+        <input id="ac-nelonen" type="checkbox" >
+        <label for="ac-nelonen">
+            Alitoimintoja
+            <i class="fa fa-chevron-down" style="float:right; margin-top:5px; font-size:12px; color:#777;"></i>
+        </label>
+        <article>
+            <p>
+                <i class="fa fa-tags"></i>
+                <!-- <span routerLink="/login">Eka valinta (login)</span> -->
+                <span [routerLink]="['/login']"> Eka (ruutterlink->/login)</span>
+            </p>
+            <!-- <a routerLink="/huu">Toinen valinta</a> -->
+            <p (click)="test('moi 2')">
+                <i class="fa fa-paw"></i>
+                <span>Toka ("console.log" funktio)</span>>
+            </p>
+            <p routerLink="/dashboard">
+                <i class="fa fa-leaf"></i>
+                Kolmas (ruutterlink->dashboard)
+            </p>
+
+        </article>
+    </div>
+    
+    <!-- <p style="margin:0; padding: 5px 10px;">Muut toiminnot</p> -->
+    
+    <div>
+        <!-- <input id="ac-viisi"  type="checkbox" checked> -->
+        <input id="ac-viisi" type="checkbox">
+        <label for="ac-viisi">
+            Tekstii 1
+            <i class="fa fa-chevron-down" style="float:right; margin-top:5px; font-size:12px; color:#777;"></i>
+        </label>
+        <article>
+            <p>
+                <i class="fa fa-paw" style="color:#777;"></i>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque vitae nesciunt placeat eveniet illo aliquam quia quisquam rem deleniti officiis id harum, voluptatibus sapiente quo illum iste animi at cupiditate!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque vitae nesciunt placeat eveniet illo aliquam quia quisquam rem deleniti officiis id harum, voluptatibus sapiente quo illum iste animi at cupiditate!
+            </p>
+            </article>
+    </div>
+    <div>
+        <input id="ac-kuutonen" type="checkbox">
+        <label for="ac-kuutonen">
+            Tekstii 2
+            <i class="fa fa-chevron-down" style="float:right; margin-top:5px; font-size:12px; color:#777;"></i>
+        </label>
+        <article>
+            <p>
+                <i class="fa fa-home"></i>
+                Kait tänne saisi jonkun kuvankin !!
+                <br>
+                <img src= "https://media.geeksforgeeks.org/wp-content/uploads/20210915115837/gfg3-300x300.png"  alt="GFG image" />
+            </p>
+        </article>
+    </div>
+
+    <div>
+        <!-- <input id="ac-seiska" type="checkbox" checked> -->
+        <input id="ac-seiska" type="checkbox">
+        <label for="ac-seiska">
+            Tiedotteita
+            <i class="fa fa-chevron-down" style="float:right; margin-top:5px; font-size:12px; color:#777;"></i>
+        </label>
+        <article>
+            <p>
+                <ngb-alert [dismissible]="false">
+                    <strong>Warning!</strong> Tämä tehty ng-bootstrap:n alert-komponentilla. Voi kyllä laittaa ihan vaan tekstinä yhtä lailla ja CSS kautta vaan värei tms.
+                </ngb-alert>
+            </p>
+        </article>
+
+    </div>
+
+    <div>
+        <!-- Voi laittaa "checked" päälle jos haluaa oletuksena auki -->
+        <input id="ac-kaheksan"  type="checkbox" checked>
+        <label for="ac-kaheksan">
+            Todo
+            <i class="fa fa-chevron-down" style="float:right; margin-top:5px; font-size:12px; color:#777;"></i>
+        </label>
+        <article>
+            <p>
+                Noi oik.reunan "chevron" ikonit ei vaihdu kutern pitäisi.
+                Eli pitäisi kiepata eri asentoon riippuen onko valikko auki vai kiinni.
+            </p>
+        </article>
+
+    </div>
+
+
+    <!-- Tämä on ng-bootstrap -komponentti (Angular) -->
+    <ng-template #content let-modal>
+        <div class="modal-header">
+            <h4 class="modal-title" id="modal-basic-title">Modal-ikkunan kokkeilua</h4>
+            <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss()"></button>
+        </div>
+        <div class="modal-body">
+            <p>Tässä kokeiltu ng-bootstrap-modal-ikkunan toimintaa</p>
+            <p>Todo: jotain sisältöö</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam enim adipisci amet voluptas ad consequuntur! Asperiores consequuntur quibusdam voluptatibus nihil ea error maiores cupiditate perferendis, magnam recusandae voluptates! Distinctio, quibusdam!</p>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-outline-dark" (click)="modal.close()">Ok</button>
+        </div>
+    </ng-template>
+
+</section>
