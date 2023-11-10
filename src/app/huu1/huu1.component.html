@@ -6,14 +6,14 @@
 <section class="ac-container">
 
     <div>
-        <input id="ac-nolla" type="checkbox" checked>
+        <input id="ac-nolla" type="checkbox">
         <label for="ac-nolla" (click)="avaaAlertti('moi kaikille')">
             Etusivu (avaa alertin)
         </label>
     </div>
 
     <div>
-        <input id="ac-eka" type="checkbox" checked >
+        <input id="ac-eka" type="checkbox" >
         <label for="ac-eka" (click)="open(content)">
             Jotain (avaa modal-ikkunan)
         </label>
@@ -24,11 +24,10 @@
         <label for="ac-toka">Ei vielä toimintoi</label>
     </div> -->
 
-    <div>
+    <div class="ac-alasveto">
         <input id="ac-nelonen" type="checkbox" >
         <label for="ac-nelonen">
             Alitoimintoja
-            <i class="fa fa-chevron-down" style="float:right; margin-top:5px; font-size:12px; color:#777;"></i>
         </label>
         <article>
             <p>
@@ -51,12 +50,11 @@
     
     <!-- <p style="margin:0; padding: 5px 10px;">Muut toiminnot</p> -->
     
-    <div>
+    <div class="ac-alasveto">
         <!-- <input id="ac-viisi"  type="checkbox" checked> -->
         <input id="ac-viisi" type="checkbox">
         <label for="ac-viisi">
             Tekstii 1
-            <i class="fa fa-chevron-down" style="float:right; margin-top:5px; font-size:12px; color:#777;"></i>
         </label>
         <article>
             <p>
@@ -66,11 +64,11 @@
             </p>
             </article>
     </div>
-    <div>
+
+    <div class="ac-alasveto">
         <input id="ac-kuutonen" type="checkbox">
         <label for="ac-kuutonen">
             Tekstii 2
-            <i class="fa fa-chevron-down" style="float:right; margin-top:5px; font-size:12px; color:#777;"></i>
         </label>
         <article>
             <p>
@@ -82,12 +80,11 @@
         </article>
     </div>
 
-    <div>
+    <div class="ac-alasveto">
         <!-- <input id="ac-seiska" type="checkbox" checked> -->
         <input id="ac-seiska" type="checkbox">
         <label for="ac-seiska">
             Tiedotteita
-            <i class="fa fa-chevron-down" style="float:right; margin-top:5px; font-size:12px; color:#777;"></i>
         </label>
         <article>
             <p>
@@ -99,17 +96,17 @@
 
     </div>
 
-    <div>
+    <div class="ac-alasveto">
         <!-- Voi laittaa "checked" päälle jos haluaa oletuksena auki -->
         <input id="ac-kaheksan"  type="checkbox" checked>
         <label for="ac-kaheksan">
             Todo
-            <i class="fa fa-chevron-down" style="float:right; margin-top:5px; font-size:12px; color:#777;"></i>
         </label>
         <article>
             <p>
                 Noi oik.reunan "chevron" ikonit ei vaihdu kutern pitäisi.
                 Eli pitäisi kiepata eri asentoon riippuen onko valikko auki vai kiinni.
+                <strong>Ok, nyt pitäisi nekin kiepata oikein !</strong>
             </p>
         </article>
 

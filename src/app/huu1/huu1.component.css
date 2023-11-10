@@ -27,6 +27,19 @@
   background: #ddd;
 }
 
+.ac-container .ac-alasveto input:checked + label::after {
+  font-family: 'FontAwesome';
+	content: '\f0d8';
+  float: right;
+  /* border: 1px solid red; */
+}
+
+.ac-container .ac-alasveto input + label::after {
+  font-family: 'FontAwesome';
+	content: '\f0d7';
+  float: right;
+}
+
 .ac-container input {
   display: none;
 }
@@ -52,7 +65,7 @@
 }
 
 .ac-container article p i.fa {
-  padding-right: 10px;
+  padding-right: 16px;
   color: #942B2D;
 }
 
