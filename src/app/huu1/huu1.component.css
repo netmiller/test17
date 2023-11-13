@@ -1,5 +1,6 @@
 
 .ac-container {
+  /* max-width: 250px; */
   max-width: 300px;
   font-family: Noto, Arial, sans-serif;
   border: 1px solid #ccc;
@@ -9,8 +10,8 @@
 .ac-container label {
   height: 30px;
   line-height: 1.8;
-  font-size: 16px;
   padding: 0 10px 0 15px;
+  font-size: 14px;
   display: block;
   cursor: pointer;
   color: #333;
@@ -50,13 +51,13 @@
 .ac-container article {
   overflow: hidden;
   height: 0;
-  transition: 0.9s;
+  transition: 0.5s;
 }
 
 .ac-container article p {
   margin: 0;
   padding:  3px 10px;
-  font-size: 15px;
+  font-size: 14px;
   color: #333;
   /* line-height: 1.5; */
 }
